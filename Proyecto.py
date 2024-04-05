@@ -31,12 +31,13 @@ ingresoenDia = 0
 while dias <= 6:  #  los dias que recorre
     print("dia:", dias)
     estudianteDia = 0  #---> cada dia que pase el contador se reiniciara para no sumar los del dia anterior
-    for _ in iter(int, 1):  #  la cantidad de estudiantes que permitira ingresar es indefinido
-   
+    while True:  #  la cantidad de estudiantes que permitira ingresar es indefinido
         estudiantes = input("ingresa tu (Nombre) para terminar dia ingresa -> 'salir': ")
         if estudiantes.lower() == "salir":
             print("haz terminado dia")
             break
+        
+        #Contador de estudiantes 
         estudenContador += 1            #-->realizar un seguimiento del número total de estudiantes que ingresan
         estudianteDia += 1           #-->calcular cuántos estudiantes ingresaron en cada día de la semana.
         
@@ -84,10 +85,9 @@ while dias <= 6:  #  los dias que recorre
     
 # se muestran los resultados al finalizar la semana
 
-print(f"Dias trascurridos son:  {ingresoenDia} dias ")
-print("Dias contados",dias - 1,"Numero total de estudiantes por semana:",estudenContador,)
-print(f"Total de estudiantes de la formacion Adso {Adso} ")
-print(f"Total de estudiantes de la formacion produccion {producción} ")
-print(f"Total de estudiantes de la formacion multimedia {multimedia} ")
-print(f"Total de estudiantes de la formacion desarrollo juegos {DesarrolloVideojuegos} ")
-print(f"Total de estudiantes de la formacion sistemas {Sistemas} ")
+print(f"Días transcurridos: {ingresoenDia}")
+print(f"Total de estudiantes de la formación ADSO: {Adso}")
+print(f"Total de estudiantes de la formación Producción Multimedia: {producción}")
+print(f"Total de estudiantes de la formación Desarrollo de Videojuegos: {multimedia}")
+print(f"Total de estudiantes de la formación Sistemas: {Sistemas}")
+print(f"Total de estudiantes que ingrearon en la semana fueron: {estudenContador}")
