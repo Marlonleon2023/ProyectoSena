@@ -8,8 +8,8 @@ por cada programa,por día. Y al finalizar la semana debe generar
 un reporte con la cantidad de estudiantes que ingresaron al centro de formación.
 """
 
-# Sistema de control de ingreso
-# ya permine contar los estudiantes que ingresan en los 6 dias
+# Sistema de control de ingreso.
+# ya permine contar los estudiantes que ingresan en los 6 dias.
 # ya permite contar el numero de esrtudiantes  por formaccion
 # ya indica el total de estudiantes clasificados
 # ya genera un reporte de los estudiates que ingresaron
